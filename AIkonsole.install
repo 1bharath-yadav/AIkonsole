@@ -1,0 +1,10 @@
+post_install() {
+  echo "Gemini is integrated into konsole.Dont forget to add api_key to environment variables😎😎"
+
+}
+
+post_remove() {
+  echo "Gemini integration removed."
+
+
+}
