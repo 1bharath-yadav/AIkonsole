@@ -17,7 +17,7 @@ for ((i=1; i<=$RETRY_COUNT; i++)); do
   RESPONSE=$(curl -s -H 'Content-Type: application/json' \
       -m "$API_TIMEOUT" \
       -d "{\"contents\":[{\"parts\":[{\"text\":\"$PROMPT\"}]}]}" \
-      -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=$API_KEY")
+      -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=$GEMINI_API_KEY")
 
   # Capture curl's exit status
   CURL_STATUS=$?
@@ -47,9 +47,18 @@ if [ $i -eq $RETRY_COUNT ] && [ $CURL_STATUS -ne 0 ]; then
   echo "Error: All attempts to connect to the API failed."
 fi
 
-#logging
+# Logging
 if [ "$LOGGING" = "yes" ]; then
-  echo "[$(date)] Prompt: $PROMPT | Response: $ANSWER" >> "$LOG_FILE"
+  # Extract the directory from the LOG_PATH
+  LOG_DIR=$(dirname "$LOG_PATH")
+
+  # Check if the directory exists, if not, create it
+  if [ ! -d "$LOG_DIR" ]; then
+      mkdir -p "$LOG_DIR"
+  fi
+
+  # Append the log with the current prompt and response
+  echo "[$(date)] Prompt: $PROMPT | Response: $ANSWER" >> "$LOG_PATH"
 fi
 
 ### output formatt detailed or plain

@@ -6,9 +6,9 @@ arch=('any')
 url="https://github.com/1bharath-yadav/AIkonsole"
 license=('GPL')
 depends=('bash' 'curl' 'jq')
-source=('gemini.sh' 'AIkonsole.conf')
+source=('gemini.sh' 'AIkonsole.conf' 'AIkonsole.install')
 install=AIkonsole.install
-sha256sums=('9d296b51b670e5b9d2e5be495bb2aef8d37304abfd567938b3aad2ac9377ae22' '95d4d6c19177edacdeda98fdefcec45172ec7e9eea1abc1f0581d11d11d37c63')
+sha256sums=('6bf8de068426d63328e5ffbbd93f548c20329fe39945cf05a334153dd89ad487' '141734a490ec1bb4055f93e884d9b9c294c1a87f7b2334d6925a458e17eb9c31' '77ff65e5943a8bd187ab26e0b4ab90a6b40cc22cf3e761b5610d6ae316d72751')
 
 package() {
 

@@ -1,10 +1,17 @@
 post_install() {
-  echo "Gemini is integrated into konsole.Dont forget to add api_key to environment variables😎😎"
+  # Adding colors and emojis for fun
+  echo -e "\033[1;32m🎉  Gemini has been successfully integrated into Konsole!  🚀\033[0m"
+  echo -e "\033[1;34m💡  Don't forget to add your API key to the environment variables!  😎😎\033[0m"
 
+  # Instruction to manually change log directory
+  echo -e "\033[1;33m⚠️  If you want to change the log directory, edit the log path manually in the config file or script.\033[0m"
+
+  # Provide API key setup instructions with more styling
+  echo -e "\033[1;36m🔑  To add your API key to environment variables, use:\033[0m"
+  echo -e "\033[1;37m||  export GEMINI_API_KEY='your_api_key_here'  |\033[0m"
 }
 
 post_remove() {
-  echo "Gemini integration removed."
-
-
+  # Colorful removal message
+  echo -e "\033[1;31m ❌  Gemini integration has been successfully removed from Konsole.\033[0m"
 }
