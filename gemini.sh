@@ -25,7 +25,6 @@ for ((i=1; i<=$RETRY_COUNT; i++)); do
   if [ $CURL_STATUS -eq 0 ]; then
     # If successful, extract and display the answer
     ANSWER=$(echo "$RESPONSE" | jq -r '.candidates[0].content.parts[0].text')
-    echo "Response: $ANSWER"
     break
   elif [ $CURL_STATUS -eq 28 ]; then
     # If curl timed out
