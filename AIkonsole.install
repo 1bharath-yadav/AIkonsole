@@ -8,7 +8,7 @@ post_install() {
 
   # Provide API key setup instructions with more styling
   echo -e "\033[1;36m🔑  To add your API key to environment variables, use:\033[0m"
-  echo -e "\033[1;37m||  export GEMINI_API_KEY='your_api_key_here'  |\033[0m"
+  echo -e "\033[1;37m||  export API_KEY='your_api_key_here'  |\033[0m"
 }
 
 post_remove() {

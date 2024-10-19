@@ -8,7 +8,7 @@ license=('GPL')
 depends=('bash' 'curl' 'jq')
 source=('gemini.sh' 'AIkonsole.conf' 'AIkonsole.install')
 install=AIkonsole.install
-sha256sums=('6bf8de068426d63328e5ffbbd93f548c20329fe39945cf05a334153dd89ad487' '141734a490ec1bb4055f93e884d9b9c294c1a87f7b2334d6925a458e17eb9c31' '77ff65e5943a8bd187ab26e0b4ab90a6b40cc22cf3e761b5610d6ae316d72751')
+sha256sums=('98a83ec213cbf48d832a6738b8d074459f0b06df8b11db43630b79b1129b701f' '141734a490ec1bb4055f93e884d9b9c294c1a87f7b2334d6925a458e17eb9c31' '74d22c9eb5dd28c586725214c6e9cb861dd48889cb16dbbd4f532099f0608422')
 
 package() {
 

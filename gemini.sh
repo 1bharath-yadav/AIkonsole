@@ -17,7 +17,7 @@ for ((i=1; i<=$RETRY_COUNT; i++)); do
   RESPONSE=$(curl -s -H 'Content-Type: application/json' \
       -m "$API_TIMEOUT" \
       -d "{\"contents\":[{\"parts\":[{\"text\":\"$PROMPT\"}]}]}" \
-      -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=$GEMINI_API_KEY")
+      -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=$API_KEY")
 
   # Capture curl's exit status
   CURL_STATUS=$?
