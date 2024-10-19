@@ -1,10 +1,10 @@
 # 🚀AIkonsole: Integrate Gemini with Konsole on Arch Linux! 🐧
 
-### Welcome to AIkonsole! This project allows you to run the Gemini in Konsole on your Arch Linux setup. Whether you're looking to enhance your terminal experience or just automate tasks with the power of AI, AIkonsole has got you covered!
+ Welcome to AIkonsole! This project allows you to run the Gemini in Konsole on your Arch Linux setup. Whether you're looking to enhance your terminal experience or just automate tasks with the power of AI, AIkonsole has got you covered!
 
 ## 🌟 Features
 
-    🔑 Gemini API integration in your Konsole.
+    🔑 Gemini API integration in your Konsole or any other terminal
     💻 Works perfectly with KDE on Arch Linux.
 
 ## 📝 Installation Instructions
@@ -21,7 +21,7 @@ this will builts and Installs the Package 📦:
 
 Add your API key to environment variables(to .zshrc,bashrc..etc)
 
-    export GEMINI_API_KEY='your_api_key_here'
+    export API_KEY='your_api_key_here' 
 
 ## ⚙️ How It Works
 
@@ -42,8 +42,20 @@ Feel free to open an issue if you encounter any problems or have suggestions!
 ## 📄 License
 This project is licensed under the GPL License. See the LICENSE file for more details.
 
+## 🎯 Objectives
+ 1.Document processing
+ 
+ 2.vision
+ 
+ 3.Audio
+              
+ 4.summarizing long context
+ 
+ 5.code execution
+ 
+ ....and all other capabilities of the gemini api https://ai.google.dev/gemini-api/doc
+              
 ## 🔗 Follow Us
 
 🌐 Website: coming soon.....
 📧 Contact: see profile
-
